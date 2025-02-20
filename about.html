@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyPortfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy:wght@400;700&display=swap');
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">MyPortfolio</div>
+      <nav>
+        <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="home" class="intro-section">
+      <div class="photo">
+        <img src="kk-removebg-preview.png" alt="Profile Picture">
+      </div>
+      <div class="text">
+        <h1>Hi I’m Jaz</h1>
+        <h1>Steven D.</h1>
+        <h1>Bok</h1>
+      </div>
+    </section>
+    <section id="about" class="about-section">
+      <h2>About Me</h2>
+      <p><strong>Full Name:</strong> JAZ STEVEN D. BOK</p>
+      <p><strong>Address:</strong> Poblacion Ayungon Negros Oriental</p>
+      <p><strong>Program:</strong> Bachelor of Science in Information Technology</p>
+      <p><strong>Course:</strong> ITS 300</p>
+      <p><strong>Course Description:</strong> Web Development 1</p>
+      <p><strong>Section:</strong> A</p>
+      <p><strong>Schedule:</strong> Everyday</p>
+      <p><strong>Time:</strong> 7:00am-8:00am</p>
+      <p><strong>Instructor:</strong> Mr. Diongie Fundador</p>
+      <h3>My Location</h3>
+      <iframe src="https://maps.google.com/maps?q=Butong%20Manjuyod%20Negros%20Oriental&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+      <p>Contact details go here...</p>
+    </section>
+  </main>
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+
+</html>
